@@ -26,7 +26,7 @@ const EditNote = () => {
 
     const getNoteById = async () => {
         try {
-            const response = await axios.get(`https://backend115-722144796089.us-central1.run.app:5000/note/${id}`);
+            const response = await axios.get(`https://backend115-722144796089.us-central1.run.app/note/${id}`);
             setJudul(response.data.judul);
             setIsi(response.data.isi);
         } catch (error) {
