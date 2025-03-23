@@ -13,7 +13,7 @@ const ViewNote = () => {
 
     const getNoteById = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/note/${id}`);
+            const response = await axios.get(`https://backend115-722144796089.us-central1.run.app/note/${id}`);
             setNote(response.data);
         } catch (error) {
             console.log(error);
