@@ -23,7 +23,7 @@ const NoteList = () => {
 
     const deleteNote = async (id) => {
         try {
-            await axios.delete(`https://backend115-722144796089.us-central1.run.app:5000/note/${id}`);
+            await axios.delete(`https://backend115-722144796089.us-central1.run.app/note/${id}`);
             getNote();
         } catch (error) {
             console.log(error);
